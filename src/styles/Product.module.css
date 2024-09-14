@@ -1,0 +1,96 @@
+/* src/styles/Product.module.css */
+
+/* Container que envolve a lista de produtos */
+.products {
+    display: flex;
+    flex-direction: column; /* Organiza o título acima dos produtos */
+    align-items: center; /* Centraliza o título horizontalmente */
+    padding: 20px;
+  }
+  
+  /* Título dos produtos */
+  .productHeading {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Container para os cards dos produtos */
+  .productGrid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a linha seguinte quando necessário */
+    gap: 20px; /* Espaçamento entre os cards */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+  }
+  
+  /* Estilo para cada card de produto */
+  .product {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo verticalmente dentro do card */
+    align-items: center; /* Centraliza o conteúdo dentro do card */
+  }
+  
+  /* Efeito ao passar o mouse sobre o card do produto */
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Imagem do produto com tamanho fixo e alinhamento */
+  .productImage {
+    width: 100%;
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço definido */
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Nome do produto */
+  .productName {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Descrição do produto */
+  .productDescription {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  
+  /* Preço do produto */
+  .productPrice {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Botão de adicionar ao carrinho */
+  .addButton {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Efeito ao passar o mouse sobre o botão */
+  .addButton:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
